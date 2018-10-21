@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
 
 import './ClueTile.scss';
 
@@ -18,7 +19,7 @@ export default class ClueTile extends Component {
     const { cost } = this.props;
 
     return (
-      <div className="clue-tile">
+      <div className={classNames('clue-tile', 'tile')}>
         <span>${cost}</span>
       </div>
     );
