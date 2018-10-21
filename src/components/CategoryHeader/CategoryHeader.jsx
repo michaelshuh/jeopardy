@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
-import './CategoryHeader.css';
 import PropTypes from 'prop-types';
+
+import './CategoryHeader.scss';
 
 export default class CategoryHeader extends PureComponent {
   static propTypes = {

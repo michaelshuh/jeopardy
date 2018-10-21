@@ -1,14 +1,14 @@
 .clue-tile {
-  width: 200px;
-  height: 150px;
+  height: 16vh;
   border: 3px solid white;
   background-color: blue;
   font-size: 60px;
   font-weight: bold;
   color: yellow;
-}
 
-.clue-tile>span {
-  line-height: 150px;
-  vertical-align: middle;
+  span {
+    line-height: 16vh;
+    display: inline-block;
+    vertical-align: middle;
+  }
 }

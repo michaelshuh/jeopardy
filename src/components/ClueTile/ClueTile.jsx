@@ -1,8 +1,9 @@
-import React, { PureComponent } from 'react';
-import './ClueTile.css';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-export default class ClueTile extends PureComponent {
+import './ClueTile.scss';
+
+export default class ClueTile extends Component {
   static propTypes = {
     clue: PropTypes.string.isRequired,
     cost: PropTypes.number.isRequired,

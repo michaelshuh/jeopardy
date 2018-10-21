@@ -1,14 +1,13 @@
 .category-header {
-  width: 200px;
-  height: 150px;
+  height: 16vh;
   border: 3px solid white;
   background-color: blue;
   font-size: 30px;
   font-weight: bold;
   color: yellow;
-}
 
-.category-header>span {
-  line-height: 150px;
-  vertical-align: middle;
+  span {
+    line-height: 16vh;
+    vertical-align: middle;
+  }
 }

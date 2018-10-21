@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import CategoryHeader from '../CategoryHeader';
 import ClueTile from '../ClueTile';
 
+import './CategoryColumn.scss';
+
 export default class CategoryColumn extends Component {
   static propTypes = {
     category: PropTypes.string.isRequired,
@@ -23,7 +25,7 @@ export default class CategoryColumn extends Component {
     const { category, categoryClues } = this.props;
 
     return (
-      <div>
+      <div className="category-column">
         <CategoryHeader categoryName={category} />
         {categoryClues.map(categoryClue => (
           <ClueTile cost={categoryClue.cost} clue={categoryClue.clue} />
