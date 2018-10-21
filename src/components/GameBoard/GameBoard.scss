@@ -1,18 +1,7 @@
 .gameboard {
   width: 100%;
-  padding: 20px 0px;
 }
 
 .tile {
-  height: 16vh;
-  border: 3px solid white;
-  background-color: blue;
-  font-weight: bold;
-  color: yellow;
-
-  span {
-    line-height: 16vh;
-    display: inline-block;
-    vertical-align: middle;
-  }
+  color: white;
 }

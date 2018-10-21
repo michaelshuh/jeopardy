@@ -159,11 +159,12 @@ const gameBoard = {
 
 export default class GameBoard extends Component {
   render() {
+    const categoryData = gameBoard.data[0];
+    const category = categoryData.category;
+    const categoryClues = categoryData.categoryClues;
     return (
       <div className="gameboard">
-        {gameBoard.data.map(categoryData => (
-          <CategoryColumn category={categoryData.category} categoryClues={categoryData.categoryClues}/>
-        ))}
+        <CategoryColumn category={category} categoryClues={categoryClues}/>
       </div>
     );
   };
