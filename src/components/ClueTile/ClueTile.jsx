@@ -19,9 +19,7 @@ export default class ClueTile extends Component {
     const { cost } = this.props;
 
     return (
-      <div className={classNames('clue-tile', 'tile')}>
-        <span>${cost}</span>
-      </div>
+      <div></div>
     );
   };
 

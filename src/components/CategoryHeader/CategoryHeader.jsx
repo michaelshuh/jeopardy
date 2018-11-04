@@ -17,9 +17,7 @@ export default class CategoryHeader extends PureComponent {
     const { categoryName } = this.props;
 
     return (
-      <div className={classNames('category-header', 'tile')}>
-        <span>{categoryName}</span>
-      </div>
+      <div></div>
     );
   };
 

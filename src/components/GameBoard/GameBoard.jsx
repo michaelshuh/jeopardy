@@ -163,9 +163,7 @@ export default class GameBoard extends Component {
     const category = categoryData.category;
     const categoryClues = categoryData.categoryClues;
     return (
-      <div className="gameboard">
-        <CategoryColumn category={category} categoryClues={categoryClues}/>
-      </div>
+      <div></div>
     );
   };
 
