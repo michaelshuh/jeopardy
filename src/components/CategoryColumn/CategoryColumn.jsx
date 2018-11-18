@@ -27,8 +27,8 @@ export default class CategoryColumn extends Component {
     return (
       <div className="category-column">
         <CategoryHeader categoryName={category} />
-        {categoryClues.map(categoryClue => (
-          <ClueTile cost={categoryClue.cost} clue={categoryClue.clue} />
+        {categoryClues.map((categoryClue, i) => (
+          <ClueTile key={i} cost={categoryClue.cost} clue={categoryClue.clue} />
         ))}
       </div>
     );

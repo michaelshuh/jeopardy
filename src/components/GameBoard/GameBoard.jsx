@@ -161,8 +161,8 @@ export default class GameBoard extends Component {
   render() {
     return (
       <div className="gameboard">
-        {gameBoard.data.map(categoryData => (
-          <CategoryColumn category={categoryData.category} categoryClues={categoryData.categoryClues}/>
+        {gameBoard.data.map((categoryData, i) => (
+          <CategoryColumn key={i} category={categoryData.category} categoryClues={categoryData.categoryClues}/>
         ))}
       </div>
     );

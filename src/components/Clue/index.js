@@ -1,1 +1,1 @@
-export { default } from './ClueTile';
+export { default } from './Clue';
