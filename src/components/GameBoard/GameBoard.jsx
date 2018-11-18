@@ -3,155 +3,66 @@ import CategoryColumn from '../CategoryColumn';
 
 import './GameBoard.scss';
 const gameBoard = {
-  data: [
+  roundType: 'SINGLE',
+  categories: [
     {
       category: 'Test 1',
       categoryClues: [
-        {
-          cost: 100,
-          clue: 'Clue 1-1',
-        },
-        {
-          cost: 200,
-          clue: 'Clue 1-2',
-        },
-        {
-          cost: 300,
-          clue: 'Clue 1-3',
-        },
-        {
-          cost: 400,
-          clue: 'Clue 1-4',
-        },
-        {
-          cost: 500,
-          clue: 'Clue 1-5',
-        }
+        'Clue 1-1',
+        'Clue 1-2',
+        'Clue 1-3',
+        'Clue 1-4',
+        'Clue 1-5',
       ]
     },
     {
       category: 'Test 2',
       categoryClues: [
-        {
-          cost: 100,
-          clue: 'Clue 2-1',
-        },
-        {
-          cost: 200,
-          clue: 'Clue 2-2',
-        },
-        {
-          cost: 300,
-          clue: 'Clue 2-3',
-        },
-        {
-          cost: 400,
-          clue: 'Clue 2-4',
-        },
-        {
-          cost: 500,
-          clue: 'Clue 2-5',
-        }
+        'Clue 2-1',
+        'Clue 2-2',
+        'Clue 2-3',
+        'Clue 2-4',
+        'Clue 2-5',
       ],
     },
     {
       category: 'Test 3',
       categoryClues: [
-        {
-          cost: 100,
-          clue: 'Clue 3-1',
-        },
-        {
-          cost: 200,
-          clue: 'Clue 3-2',
-        },
-        {
-          cost: 300,
-          clue: 'Clue 3-3',
-        },
-        {
-          cost: 400,
-          clue: 'Clue 3-4',
-        },
-        {
-          cost: 500,
-          clue: 'Clue 3-5',
-        }
+        'Clue 3-1',
+        'Clue 3-2',
+        'Clue 3-3',
+        'Clue 3-4',
+        'Clue 3-5',
       ],
     },
     {
       category: 'Test 4',
       categoryClues: [
-        {
-          cost: 100,
-          clue: 'Clue 4-1',
-        },
-        {
-          cost: 200,
-          clue: 'Clue 4-2',
-        },
-        {
-          cost: 300,
-          clue: 'Clue 4-3',
-        },
-        {
-          cost: 400,
-          clue: 'Clue 4-4',
-        },
-        {
-          cost: 500,
-          clue: 'Clue 4-5',
-        }
+        'Clue 4-1',
+        'Clue 4-2',
+        'Clue 4-3',
+        'Clue 4-4',
+        'Clue 4-5',
       ],
     },
     {
       category: 'Test 5',
       categoryClues: [
-        {
-          cost: 100,
-          clue: 'Clue 5-1',
-        },
-        {
-          cost: 200,
-          clue: 'Clue 5-2',
-        },
-        {
-          cost: 300,
-          clue: 'Clue 5-3',
-        },
-        {
-          cost: 400,
-          clue: 'Clue 5-4',
-        },
-        {
-          cost: 500,
-          clue: 'Clue 5-5',
-        }
+        'Clue 5-1',
+        'Clue 5-2',
+        'Clue 5-3',
+        'Clue 5-4',
+        'Clue 5-5',
       ],
     },
     {
       category: 'Test 6',
       categoryClues: [
-        {
-          cost: 100,
-          clue: 'Clue 6-1',
-        },
-        {
-          cost: 200,
-          clue: 'Clue 6-2',
-        },
-        {
-          cost: 300,
-          clue: 'Clue 6-3',
-        },
-        {
-          cost: 400,
-          clue: 'Clue 6-4',
-        },
-        {
-          cost: 500,
-          clue: 'Clue 6-5',
-        }
+        'Clue 6-1',
+        'Clue 6-2',
+        'Clue 6-3',
+        'Clue 6-4',
+        'Clue 6-5',
       ],
     },
   ]
@@ -161,8 +72,8 @@ export default class GameBoard extends Component {
   render() {
     return (
       <div className="gameboard">
-        {gameBoard.data.map((categoryData, i) => (
-          <CategoryColumn key={i} category={categoryData.category} categoryClues={categoryData.categoryClues}/>
+        {gameBoard.categories.map((categoryData, i) => (
+          <CategoryColumn key={i} roundType={gameBoard.roundType} category={categoryData.category} categoryClues={categoryData.categoryClues}/>
         ))}
       </div>
     );

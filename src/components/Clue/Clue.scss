@@ -7,6 +7,19 @@
   position: fixed;
   z-index: 100;
   top: 0;
+
+  button {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    background-color: transparent;
+    border-radius: 25px;
+    color: white;
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+  }
 }
 
 .hide {
